@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dean & Sam 🖤</title>
+
+  <!-- Fonte estilo assinatura -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+      text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.65);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #e0a85d;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 25px;
+      color: #f5e6c1;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .gif-box {
+      margin: 30px 0;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    }
+
+    .dean-box {
+      background: rgba(255,255,255,0.08);
+      border-left: 5px solid #e0a85d;
+      padding: 25px;
+      border-radius: 15px;
+      margin: 40px 0;
+      text-align: left;
+      display: none;
+      animation: aparecer 1s ease forwards;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .assinatura {
+      text-align: right;
+      margin-top: 20px;
+      font-family: 'Pacifico', cursive;
+      font-size: 2em;
+      color: #e0a85d;
+    }
+
+    .botao {
+      background: linear-gradient(45deg, #e0a85d, #b87333);
+      border: none;
+      padding: 18px 35px;
+      font-size: 1.3em;
+      color: #000;
+      border-radius: 50px;
+      cursor: pointer;
+      margin: 30px 0;
+      box-shadow: 0 0 20px rgba(224,168,93,0.6);
+    }
+
+    .botao:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 1em;
+      opacity: 0.8;
+      color: #e0a85d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Dean & Sam 🖤</h1>
+    <h2>Família. Estrada. Para sempre. 🚗</h2>
+
+    <!-- GIF 1 -->
+    <div class="gif-box">
+      <img src="https://media1.tenor.com/m/UAuEE_P42ssAAAAC/slap-supernatural.gif">
+    </div>
+
+    <!-- BOTÃO -->
+    <button class="botao" onclick="abrirCarta()">
+      ▶️ Tocar música & abrir a carta 🖤
+    </button>
+
+    <!-- MÚSICA -->
+    <audio id="musica">
+      <source src="WhatsApp-Audio-2025-12-26-at-15.24.41.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- CARTA -->
+    <div class="dean-box" id="carta">
+      <p><strong>“E aí, Sammy</strong></p>
+
+      <p>
+        Eu não sou muito bom com palavras, você sabe. Nunca fui.
+        Mas se tem uma coisa que eu sei é isso: sem você, eu não seria nada.
+      </p>
+
+      <p>
+        A estrada é longa, o mundo é uma bagunça, e os monstros nunca param de aparecer.
+        Mas toda vez que eu olho pro lado e vejo você ali,
+        eu lembro por que continuo dirigindo.
+      </p>
+
+      <p>
+        Você é meu irmão. Minha âncora.
+        A pessoa que me puxa de volta quando eu passo do limite —
+        mesmo quando eu finjo que não preciso.
+      </p>
+
+      <p>
+        Já erramos, já caímos, já perdemos demais…
+        mas enquanto formos nós dois, contra tudo,
+        eu encaro qualquer inferno.
+      </p>
+
+      <p>
+        Então não importa o que aconteça, Sammy.
+        Mesmo que você seja bem gay,
+        eu tô aqui. Sempre estive. Sempre vou estar.
+      </p>
+
+      <p>
+        Família não acaba com sangue.
+        E você… você é tudo pra mim.”
+      </p>
+
+      <div class="assinatura">
+        Dean Winchester
+      </div>
+    </div>
+
+    <!-- GIF FINAL -->
+    <div class="gif-box">
+      <img src="https://media1.tenor.com/m/BoqSZrs_SuAAAAAC/dean-winchester-wink.gif">
+      <p style="margin-top: 15px; font-style: italic; color: #f5e6c1;">
+        — com carinho (e muito charme),<br>
+        <strong>seu irmão gostosão 😏🖤</strong>
+      </p>
+    </div>
+
+    <footer>
+      🖤 Carry on, my wayward son 🖤
+    </footer>
+  </div>
+
+  <script>
+    function abrirCarta() {
+      document.getElementById("musica").play();
+      document.getElementById("carta").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
